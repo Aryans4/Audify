@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#00424e", "tertiary-fixed": "#ffd9e4", "surface-dim": "#121317", "primary-fixed-dim": "#d0bcff", "surface-container-highest": "#343439", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-primary-container": "#340080", "secondary-fixed": "#acedff", "on-surface-variant": "#cbc3d7", "on-secondary-fixed": "#001f26", "surface-variant": "#343439", "on-tertiary": "#640039", "surface-container-lowest": "#0d0e12", "on-primary-fixed": "#23005c", "outline": "#958ea0", "primary-container": "#a078ff", "on-tertiary-container": "#570032", "surface-tint": "#d0bcff", "tertiary-fixed-dim": "#ffb0cd", "background": "#121317", "surface": "#121317", "on-error": "#690005", "on-secondary-fixed-variant": "#004e5c", "surface-container": "#1e1f24", "on-surface": "#e3e2e8", "error": "#ffb4ab", "tertiary-container": "#f751a1", "inverse-primary": "#6d3bd7", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#3e0022", "inverse-on-surface": "#2f3035", "surface-bright": "#38393e", "on-background": "#e3e2e8", "on-primary-fixed-variant": "#5516be", "surface-container-high": "#292a2e", "tertiary": "#ffb0cd", "error-container": "#93000a", "surface-container-low": "#1a1b20", "primary-fixed": "#e9ddff", "on-primary": "#3c0091", "secondary-fixed-dim": "#4cd7f6", "primary": "#d0bcff", "on-secondary": "#003640", "inverse-surface": "#e3e2e8", "on-tertiary-fixed-variant": "#8c0053", "secondary": "#4cd7f6" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "gutter": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "mono-metric": ["JetBrains Mono"], "label-sm": ["Inter"], "body-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "mono-metric": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary/20 selection:text-primary"><aside class="fixed left-0 top-0 bottom-24 w-64 bg-surface-container-lowest/90 backdrop-blur-2xl z-40 flex flex-col justify-between overflow-y-auto px-4 py-5 shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col gap-6"><div class="flex items-center justify-between px-2"><div class="flex items-center gap-3"><img alt="Brand logo. - Primary color: #8b5cf6
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-full
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3MKQ7OouQ8tb-wkZ4v1B1aX8BxjVkIQDMkp3udWgyCPoaZ8-f1CMgPCredAg6icbg3pPCHgRdcV6uhG80GLji_hth9Vgl96YpZ45GYagBMMUBueqAhDPcR_UATHvqVRlWMAhssAhUVcTTd3xiKYgLxBP5ArNbv3QczJDlUhEWZSmJSM4eMCsOGHbWSLwFsE0RJEPioP72WHYxXfK4HyOtmNQaKq8beyNDz_eOxNZyu5xFuLMmFBvCshDj"/><span class="font-headline-sm text-headline-sm tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-secondary-fixed">Audify</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">AI PRO</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(160,120,255,0.35)]"><span class="px-2.5 pb-1 text-outline font-label-sm text-label-sm uppercase tracking-wider">Discover &amp; Studio</span><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="home-discover" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">explore</span><span class="font-label-lg text-label-lg">Home / Discover</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="mood-map" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">bubble_chart</span><span class="font-label-lg text-label-lg">Mood Map</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ai-dj" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">graphic_eq</span><span class="font-label-lg text-label-lg">AI DJ</span></a><a aria-current="page" class="flex items-center justify-between px-3 py-2.5 transition-all group bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(160,120,255,0.35)]" data-path="audify-studio" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors text-xl">neurology</span><span class="font-label-lg text-label-lg">Audify Studio</span></div><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="library" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">queue_music</span><span class="font-label-lg text-label-lg">Library</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="remix-lab" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">tune</span><span class="font-label-lg text-label-lg">Remix Lab</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="sound-dna" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">fingerprint</span><span class="font-label-lg text-label-lg">Sound DNA</span></a></nav><div class="flex flex-col gap-2 pt-2"><span class="px-2.5 text-outline font-label-sm text-label-sm uppercase tracking-wider">My Neural Playlists</span><div class="flex flex-col gap-1"><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="late-night-cyber-chill" href="#"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="truncate">Late Night Cyber-Chill</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="neural-beats-vol-1" href="#"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="truncate">Neural Beats Vol. 1</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="focus-stems" href="#"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="truncate">Focus Stems</span></a></div></div></div><div class="flex flex-col gap-4 pt-4"><div class="p-3.5 rounded-xl bg-surface-container-low/90 backdrop-blur-md flex flex-col gap-2"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-secondary">bolt</span>AI Generation</span><span class="text-on-surface font-mono-metric text-mono-metric font-semibold">48 / 50</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-[96%]"></div></div><span class="text-outline font-label-sm text-label-sm">2 credits recharge in 4h</span></div><div class="flex items-center justify-between px-2 pt-1 font-label-sm text-label-sm text-on-surface-variant"><a class="flex items-center gap-1.5 hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-base">settings</span>Settings</a><a class="flex items-center gap-1.5 hover:text-on-surface transition-colors" data-path="help" href="#"><span class="material-symbols-outlined text-base">help</span>Help</a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-2xl z-30 flex items-center justify-between px-6 shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex items-center gap-4 flex-1 max-w-2xl"><div class="relative flex-1 flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full h-10 pl-9 pr-20 rounded-full bg-surface-container-low text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Ask Audify AI or search artists, stems, moods..." type="text"/><div class="absolute right-3 flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-high text-outline font-mono-metric text-mono-metric">⌘K</div></div><div class="hidden xl:flex items-center gap-1.5 font-label-sm text-label-sm"><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">⚡ Cyberpunk</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">🌊 Deep Ambient</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">🎹 Neo-Soul</button></div></div><div class="flex items-center gap-4"><button class="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md text-label-md shadow-[0_0_20px_rgba(160,120,255,0.4)] hover:shadow-[0_0_26px_rgba(76,215,246,0.5)] transition-all"><span class="material-symbols-outlined text-base">auto_awesome</span><span>New Creation</span></button><div class="flex items-center gap-1"><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">forum</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest animate-ping"></span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span></button></div><div class="flex items-center gap-3 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1WrGF8SgoC55DQ9kCK-ntgHExVyjKDRx8L_RqIlRzhjtPHqcRzwBm1OXqFnnNwAH7WlXySxWf2NoPX0SM2Zb1o142qNlTMdwlfOsRlE9IdxvMls_w_5wnRfJoTfZrbjFnPee88PUTxzD1ED2VNf6pnUYxtH6duMflwV1x_egi8JVPRm48NRocSpr221ylt8EXtH4pvqupr0_QqgHwCA_qgpzi2g9pq5rdodPmNw0q8LA8pICnqWbfDDBMII"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Julian Vane</span><span class="font-label-sm text-label-sm text-secondary font-medium leading-tight">Pro Creator</span></div></div></div></header><main class="relative pt-16 pb-28 w-full px-8 bg-surface min-h-screen"><div class="flex flex-col w-full gap-5 pb-12">
+<!-- Top Studio Master Bar -->
+<header class="w-full bg-surface-container-low rounded-xl px-5 py-3 shadow-md flex flex-wrap items-center justify-between gap-4">
+<!-- Project & Versioning -->
+<div class="flex items-center gap-4 min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center flex-shrink-0 text-primary">
+<span class="material-symbols-outlined text-2xl">graphic_eq</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Neural Drift</h1>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-outline font-mono-metric text-mono-metric">Take 3</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<div class="relative inline-flex items-center">
+<select class="appearance-none bg-surface-container-highest text-on-surface font-label-sm text-label-sm pl-2.5 pr-7 py-1 rounded-md cursor-pointer focus:outline-none focus:bg-surface-bright transition-colors">
+<option>v1.2 Current Master</option>
+<option>v1.1 Remixed (Sub Boost)</option>
+<option>v1.0 Raw Take</option>
+</select>
+<span class="material-symbols-outlined text-outline text-sm absolute right-1.5 pointer-events-none">expand_more</span>
+</div>
+<button class="flex items-center gap-1 text-secondary hover:text-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-md hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-sm">fork_right</span>
+<span>Branch</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Center Engine Status -->
+<div class="hidden lg:flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-surface-container-lowest shadow-inner">
+<div class="relative flex items-center justify-center">
+<span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
+<span class="w-2 h-2 rounded-full bg-secondary absolute"></span>
+</div>
+<span class="font-mono-metric text-mono-metric text-secondary font-semibold">H100 DSP ACTIVE</span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="font-mono-metric text-mono-metric text-on-surface-variant">Buffer 64 spls</span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<div class="flex items-center gap-1 font-mono-metric text-mono-metric text-primary">
+<span class="material-symbols-outlined text-sm">speed</span>
+<span>12ms Latency</span>
+</div>
+</div>
+<!-- Master Audio Actions & Export -->
+<div class="flex items-center gap-2.5">
+<div class="relative group">
+<button class="flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-surface-container-highest transition-colors">
+<span class="material-symbols-outlined text-lg text-primary">download</span>
+<span>Export</span>
+<span class="material-symbols-outlined text-sm text-outline">expand_more</span>
+</button>
+<!-- Dropdown menu -->
+<div class="hidden group-hover:flex flex-col absolute right-0 top-full mt-1 w-56 bg-surface-container-highest rounded-lg shadow-xl p-1.5 z-30">
+<button class="flex items-center justify-between px-3 py-2 rounded text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-colors">
+<span>WAV (24-bit / 96kHz)</span>
+<span class="font-mono-metric text-mono-metric text-secondary font-semibold">HQ</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-colors">
+<span>All Separated Stems (.zip)</span>
+<span class="font-mono-metric text-mono-metric text-outline">5 tracks</span>
+</button>
+<button class="flex items-center justify-between px-3 py-2 rounded text-left font-label-sm text-label-sm text-on-surface hover:bg-surface-container transition-colors">
+<span>MIDI Patterns &amp; Markers</span>
+<span class="font-mono-metric text-mono-metric text-outline">Stems</span>
+</button>
+</div>
+</div>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md">
+<span class="material-symbols-outlined text-lg text-secondary">share</span>
+<span>Publish</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md shadow-[0_0_20px_rgba(160,120,255,0.35)] hover:shadow-[0_0_24px_rgba(160,120,255,0.5)] transition-all">
+<span class="material-symbols-outlined text-lg">cloud_done</span>
+<span>Save Snapshot</span>
+</button>
+</div>
+</header>
+<!-- Main DAW Workspace (Split Pane) -->
+<div class="w-full grid grid-cols-1 xl:grid-cols-12 gap-5 items-start">
+<!-- LEFT PANEL (35%): Sonic Prompt & Generative Parameters -->
+<section class="xl:col-span-4 lg:col-span-5 flex flex-col gap-4">
+<!-- Generative Prompt Box -->
+<div class="bg-surface-container-low rounded-xl p-5 shadow-sm flex flex-col gap-4 relative overflow-hidden">
+<div class="absolute -right-16 -top-16 w-36 h-36 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2 text-on-surface">
+<span class="material-symbols-outlined text-secondary">psychology</span>
+<span class="font-headline-sm text-headline-sm">Neural Synthesis</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-mono-metric text-mono-metric">Audify-v4.2-Pro</span>
+</div>
+<!-- Prompt Textarea Area -->
+<div class="flex flex-col gap-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>NATURAL LANGUAGE PROMPT</span>
+<span class="text-outline font-mono-metric text-mono-metric">114 / 280 chars</span>
+</label>
+<div class="relative">
+<textarea class="w-full bg-surface-container-lowest text-on-surface p-3 rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary transition-all resize-none shadow-inner leading-relaxed" rows="4">Cinematic electronic track with emotional grand piano, 808 sub-bass, and an energetic melodic drop at 128 BPM.</textarea>
+<button class="absolute bottom-2.5 right-2.5 p-1.5 rounded-md bg-surface-container text-outline hover:text-primary transition-colors" title="Randomize Inspiration">
+<span class="material-symbols-outlined text-base">casino</span>
+</button>
+</div>
+</div>
+<!-- Modifiers / Quick Injection Chips -->
+<div class="flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Acoustic Injection Chips</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-primary font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="text-primary font-bold">+</span> Cyber Hook
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-secondary font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="text-secondary font-bold">+</span> Ethereal Vocal Chops
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-tertiary font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="text-tertiary font-bold">+</span> Analog Warmth
+            </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-secondary-fixed font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="text-secondary-fixed font-bold">+</span> Binaural Pan
+            </button>
+</div>
+</div>
+</div>
+<!-- Granular Musical Parameters -->
+<div class="bg-surface-container-low rounded-xl p-5 shadow-sm flex flex-col gap-5">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-lg text-label-lg text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">tune</span>
+            Generative Coordinates
+          </span>
+<span class="text-outline font-label-sm text-label-sm cursor-pointer hover:text-on-surface">Reset Defaults</span>
+</div>
+<!-- Genre & Style Select -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-outline">PRIMARY GENRE / FLAVOR</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="px-3 py-2 rounded-lg bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center shadow-sm">Melodic Bass</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm text-center transition-colors">Cyber Ambient</button>
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm text-center transition-colors">Neo-Trance</button>
+</div>
+</div>
+<!-- Mood Spectrum Slider -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-medium">Euphoric / Lucid</span>
+<span class="text-outline font-mono-metric text-mono-metric">Harmonic Spectrum (68%)</span>
+<span class="text-tertiary font-medium">Dark / Gritty</span>
+</div>
+<div class="relative w-full h-2 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="w-full h-full bg-gradient-to-r from-secondary via-primary to-tertiary"></div>
+<div class="absolute left-[68%] -ml-2 w-4 h-4 rounded-full bg-on-surface shadow-md"></div>
+</div>
+</div>
+<!-- BPM Tap & Key Selector -->
+<div class="grid grid-cols-2 gap-3">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-outline">TEMPO / BPM</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg px-3 py-2 justify-between">
+<span class="font-mono-metric text-mono-metric text-on-surface font-bold">128</span>
+<button class="px-2 py-0.5 rounded bg-surface-container-high text-secondary hover:bg-surface-container-highest font-mono-metric text-mono-metric uppercase transition-colors" id="tapBpm">
+                TAP
+              </button>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-outline">ROOT KEY &amp; SCALE</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-mono-metric text-mono-metric px-3 py-2 rounded-lg focus:outline-none">
+<option>F Minor (Aeolian)</option>
+<option>D Major (Lydian)</option>
+<option>A Minor (Dorian)</option>
+<option>C# Melodic Minor</option>
+</select>
+<span class="material-symbols-outlined text-outline text-sm absolute right-2.5 top-2.5 pointer-events-none">unfold_more</span>
+</div>
+</div>
+</div>
+<!-- AI Vocalist Model -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-outline">NEURAL VOCALIST MODEL</label>
+<span class="font-mono-metric text-mono-metric text-secondary font-semibold">Trained Model</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-container-lowest p-2.5 rounded-lg">
+<div class="w-8 h-8 rounded-full bg-gradient-to-tr from-primary to-tertiary flex items-center justify-center flex-shrink-0 text-on-primary">
+<span class="material-symbols-outlined text-base">mic</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="relative">
+<select class="w-full appearance-none bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer">
+<option>Luna-v4 (Ethereal Soprano • Polyphonic)</option>
+<option>Atlas-v2 (Deep Cinematic Baritone)</option>
+<option>Sol-v3 (Vocoder Hyperpop Lead)</option>
+<option>Disabled (Pure Instrumental)</option>
+</select>
+<span class="material-symbols-outlined text-outline text-sm absolute right-0 top-1 pointer-events-none">expand_more</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline truncate">Formant shifting enabled • 24b depth</span>
+</div>
+</div>
+</div>
+<!-- Length Scrubber Slider -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">TARGET ARRANGEMENT LENGTH</span>
+<span class="font-mono-metric text-mono-metric text-on-surface font-bold">02:45 (88 Bars)</span>
+</div>
+<div class="relative w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full w-[65%]"></div>
+</div>
+</div>
+<!-- Generation Trigger Button -->
+<button class="w-full mt-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-primary-container via-primary to-secondary text-on-primary font-headline-sm text-headline-sm flex items-center justify-center gap-2 shadow-[0_0_24px_rgba(160,120,255,0.4)] hover:shadow-[0_0_32px_rgba(76,215,246,0.6)] hover:scale-[1.01] active:scale-[0.99] transition-all">
+<span class="material-symbols-outlined animate-spin text-xl">progress_activity</span>
+<span>Generate New Track</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest/30 text-xs font-mono-metric tracking-normal">2 Credits</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-outline font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-xs text-secondary">lock</span>
+<span>End-to-end watermarked with SoundID cryptographic hash</span>
+</div>
+</div>
+</section>
+<!-- RIGHT PANEL (65%): Multi-Track Stem Timeline & Waveform Editor -->
+<section class="xl:col-span-8 lg:col-span-7 flex flex-col gap-4 min-w-0">
+<!-- Timeline & Transport Controls Header -->
+<div class="bg-surface-container-low rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<!-- Control Strip -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-3">
+<div class="flex items-center gap-3">
+<button class="w-10 h-10 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xl">skip_previous</span>
+</button>
+<button class="w-11 h-11 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary flex items-center justify-center shadow-[0_0_18px_rgba(208,188,255,0.4)] hover:scale-105 transition-transform" id="studioPlayBtn">
+<span class="material-symbols-outlined text-2xl">pause</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-surface-container-highest hover:bg-surface-bright flex items-center justify-center text-on-surface transition-colors">
+<span class="material-symbols-outlined text-xl">stop</span>
+</button>
+<div class="h-6 w-0.5 bg-surface-container-highest mx-1"></div>
+<button class="px-3 py-1.5 rounded-lg bg-secondary-container/20 text-secondary font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base animate-pulse">repeat</span>
+<span>Loop 1:12 - 1:48</span>
+</button>
+</div>
+<!-- Timecode Metrics -->
+<div class="flex items-center gap-4">
+<div class="flex flex-col items-end">
+<span class="font-mono-metric text-mono-metric text-outline text-[10px]">TIME POSITION</span>
+<span class="font-mono-metric text-headline-sm text-secondary font-bold tracking-wider">01:14.28</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-mono-metric text-mono-metric text-outline text-[10px]">BAR / BEAT</span>
+<span class="font-mono-metric text-headline-sm text-on-surface font-bold tracking-wider">36.2.0</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2.5 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-outline text-sm">grid_view</span>
+<span class="font-mono-metric text-mono-metric text-on-surface">1/16 Grid</span>
+</div>
+</div>
+</div>
+<!-- Section Arrangement Ruler -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between text-outline font-mono-metric text-mono-metric px-1">
+<span>0:00</span>
+<span>0:30</span>
+<span>1:00</span>
+<span>1:30</span>
+<span>2:00</span>
+<span>2:30</span>
+<span>2:45</span>
+</div>
+<!-- Arrangement Region Blocks -->
+<div class="w-full h-8 bg-surface-container-lowest rounded-lg p-0.5 flex gap-1 relative overflow-hidden">
+<div class="h-full rounded bg-surface-container flex items-center justify-center font-mono-metric text-label-sm text-outline px-2" style="width: 14%;">
+              Intro
+            </div>
+<div class="h-full rounded bg-surface-container flex items-center justify-center font-mono-metric text-label-sm text-outline px-2" style="width: 20%;">
+              Verse
+            </div>
+<div class="h-full rounded bg-surface-container-high flex items-center justify-center font-mono-metric text-label-sm text-on-surface-variant px-2" style="width: 10%;">
+              Build-up
+            </div>
+<!-- Selected Chorus Section -->
+<div class="h-full rounded bg-primary-container text-on-primary-container flex items-center justify-between px-3 font-mono-metric text-label-sm font-bold shadow-[0_0_12px_rgba(160,120,255,0.4)]" style="width: 22%;">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Chorus (Active)</span>
+</div>
+<span class="text-xs">1:12 - 1:48</span>
+</div>
+<div class="h-full rounded bg-surface-container flex items-center justify-center font-mono-metric text-label-sm text-outline px-2" style="width: 18%;">
+              Bridge
+            </div>
+<div class="h-full rounded bg-surface-container flex items-center justify-center font-mono-metric text-label-sm text-outline px-2" style="width: 16%;">
+              Outro
+            </div>
+<!-- Absolute Master Playhead Line -->
+<div class="absolute top-0 bottom-0 left-[45%] w-0.5 bg-secondary shadow-[0_0_8px_rgba(76,215,246,0.8)] z-20 pointer-events-none">
+<div class="w-2.5 h-2 -ml-1 bg-secondary rounded-b"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Multi-Track Stem Mixer List -->
+<div class="flex flex-col gap-2.5">
+<!-- Track 1: Vocals -->
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col md:flex-row items-stretch gap-4 hover:bg-surface-container transition-colors group relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary rounded-l"></div>
+<!-- Track Info & Controls -->
+<div class="w-full md:w-56 flex-shrink-0 flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-lg">mic</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Vocal Lead</span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline text-[11px]">LUNA-V4</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">S</button>
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">M</button>
+</div>
+<!-- Pan & Volume Mini Faders -->
+<div class="flex items-center gap-2 flex-1 max-w-[130px]">
+<span class="text-[10px] font-mono-metric text-outline">PAN</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-1/2 -ml-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<span class="text-[10px] font-mono-metric text-on-surface-variant font-bold">-1.2dB</span>
+</div>
+</div>
+</div>
+<!-- Waveform Track Display -->
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-2 flex items-center relative overflow-hidden h-16">
+<!-- Simulated Audio Waveform Bar Graph -->
+<svg class="w-full h-full text-secondary opacity-80" preserveaspectratio="none" viewbox="0 0 400 48">
+<path d="M0,24 L10,24 L15,12 L20,36 L25,18 L30,30 L35,6 L40,42 L45,14 L50,34 L55,20 L60,28 L65,8 L70,40 L75,16 L80,32 L85,22 L90,26 L95,4 L100,44 L105,12 L110,36 L115,18 L120,30 L125,2 L130,46 L135,10 L140,38 L145,16 L150,32 L155,22 L160,26 L165,6 L170,42 L175,14 L180,34 L185,18 L190,30 L195,4 L200,44 L205,10 L210,38 L215,14 L220,34 L225,20 L230,28 L235,8 L240,40 L245,16 L250,32 L255,22 L260,26 L265,2 L270,46 L275,12 L280,36 L285,16 L290,32 L295,20 L300,28 L305,6 L310,42 L315,14 L320,34 L325,18 L330,30 L335,8 L340,40 L345,16 L350,32 L355,22 L360,26 L365,4 L370,44 L375,12 L380,36 L385,18 L390,30 L395,24 L400,24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+<!-- Highlight Box inside Waveform (Selected region) -->
+<div class="absolute left-[40%] width-[22%] w-[25%] top-0 bottom-0 bg-primary/20 pointer-events-none"></div>
+<!-- Playhead slice -->
+<div class="absolute left-[45%] top-0 bottom-0 w-0.5 bg-secondary pointer-events-none"></div>
+</div>
+</div>
+<!-- Track 2: Drums & 808s -->
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col md:flex-row items-stretch gap-4 hover:bg-surface-container transition-colors group relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary rounded-l"></div>
+<div class="w-full md:w-56 flex-shrink-0 flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-lg">equalizer</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Punchy Drums &amp; Stems</span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline text-[11px]">808/KIT</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">S</button>
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">M</button>
+</div>
+<div class="flex items-center gap-2 flex-1 max-w-[130px]">
+<span class="text-[10px] font-mono-metric text-outline">PAN</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-1/2 -ml-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-primary"></div>
+</div>
+<span class="text-[10px] font-mono-metric text-on-surface-variant font-bold">0.0dB</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-2 flex items-center relative overflow-hidden h-16">
+<svg class="w-full h-full text-primary opacity-80" preserveaspectratio="none" viewbox="0 0 400 48">
+<!-- Rhythmic transient spikes -->
+<path d="M0,24 L10,24 L12,4 L14,44 L16,24 L30,24 L32,10 L34,38 L36,24 L50,24 L52,4 L54,44 L56,24 L70,24 L72,10 L74,38 L76,24 L90,24 L92,4 L94,44 L96,24 L110,24 L112,10 L114,38 L116,24 L130,24 L132,4 L134,44 L136,24 L150,24 L152,10 L154,38 L156,24 L170,24 L172,4 L174,44 L176,24 L190,24 L192,10 L194,38 L196,24 L210,24 L212,4 L214,44 L216,24 L230,24 L232,10 L234,38 L236,24 L250,24 L252,4 L254,44 L256,24 L270,24 L272,10 L274,38 L276,24 L290,24 L292,4 L294,44 L296,24 L310,24 L312,10 L314,38 L316,24 L330,24 L332,4 L334,44 L336,24 L350,24 L352,10 L354,38 L356,24 L370,24 L372,4 L374,44 L376,24 L390,24 L392,10 L394,38 L396,24 L400,24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+<div class="absolute left-[40%] width-[22%] w-[25%] top-0 bottom-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute left-[45%] top-0 bottom-0 w-0.5 bg-secondary pointer-events-none"></div>
+</div>
+</div>
+<!-- Track 3: Sub Bass & Reese -->
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col md:flex-row items-stretch gap-4 hover:bg-surface-container transition-colors group relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary rounded-l"></div>
+<div class="w-full md:w-56 flex-shrink-0 flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-lg">waves</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Sub Bass &amp; Reese</span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline text-[11px]">ANALOG</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">S</button>
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">M</button>
+</div>
+<div class="flex items-center gap-2 flex-1 max-w-[130px]">
+<span class="text-[10px] font-mono-metric text-outline">PAN</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-1/2 -ml-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-tertiary"></div>
+</div>
+<span class="text-[10px] font-mono-metric text-on-surface-variant font-bold">+0.4dB</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-2 flex items-center relative overflow-hidden h-16">
+<!-- Smooth heavy sub waveforms -->
+<svg class="w-full h-full text-tertiary opacity-80" preserveaspectratio="none" viewbox="0 0 400 48">
+<path d="M0,24 C20,8 40,40 60,24 C80,8 100,40 120,24 C140,8 160,40 180,24 C200,8 220,40 240,24 C260,8 280,40 300,24 C320,8 340,40 360,24 C380,8 400,40 420,24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+<div class="absolute left-[40%] width-[22%] w-[25%] top-0 bottom-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute left-[45%] top-0 bottom-0 w-0.5 bg-secondary pointer-events-none"></div>
+</div>
+</div>
+<!-- Track 4: Melodic Synthesizers -->
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col md:flex-row items-stretch gap-4 hover:bg-surface-container transition-colors group relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary-fixed rounded-l"></div>
+<div class="w-full md:w-56 flex-shrink-0 flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-lg">piano</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Melodic Synths &amp; Piano</span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline text-[11px]">POLY-ARP</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">S</button>
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">M</button>
+</div>
+<div class="flex items-center gap-2 flex-1 max-w-[130px]">
+<span class="text-[10px] font-mono-metric text-outline">PAN</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-[35%] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-secondary-fixed"></div>
+</div>
+<span class="text-[10px] font-mono-metric text-on-surface-variant font-bold">-2.0dB</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-2 flex items-center relative overflow-hidden h-16">
+<svg class="w-full h-full text-secondary-fixed opacity-75" preserveaspectratio="none" viewbox="0 0 400 48">
+<path d="M0,24 Q10,14 20,24 T40,24 T60,10 T80,38 T100,24 T120,12 T140,36 T160,24 T180,10 T200,38 T220,24 T240,12 T260,36 T280,24 T300,10 T320,38 T340,24 T360,12 T380,36 T400,24" fill="none" stroke="currentColor" stroke-width="2"></path>
+</svg>
+<div class="absolute left-[40%] width-[22%] w-[25%] top-0 bottom-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute left-[45%] top-0 bottom-0 w-0.5 bg-secondary pointer-events-none"></div>
+</div>
+</div>
+<!-- Track 5: Ambient FX & Risers -->
+<div class="bg-surface-container-low rounded-xl p-3.5 shadow-sm flex flex-col md:flex-row items-stretch gap-4 hover:bg-surface-container transition-colors group relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-outline rounded-l"></div>
+<div class="w-full md:w-56 flex-shrink-0 flex flex-col justify-between gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-lg">blur_on</span>
+<span class="font-label-md text-label-md text-on-surface truncate">Ambient FX &amp; Risers</span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline text-[11px]">SPATIAL</span>
+</div>
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1">
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">S</button>
+<button class="w-6 h-6 rounded bg-surface-container-highest hover:bg-error-container hover:text-on-error-container text-outline font-mono-metric text-[11px] font-bold flex items-center justify-center transition-colors">M</button>
+</div>
+<div class="flex items-center gap-2 flex-1 max-w-[130px]">
+<span class="text-[10px] font-mono-metric text-outline">PAN</span>
+<div class="w-full h-1 bg-surface-container-highest rounded-full relative">
+<div class="absolute left-[65%] top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-outline"></div>
+</div>
+<span class="text-[10px] font-mono-metric text-on-surface-variant font-bold">-4.5dB</span>
+</div>
+</div>
+</div>
+<div class="flex-1 bg-surface-container-lowest rounded-lg p-2 flex items-center relative overflow-hidden h-16">
+<svg class="w-full h-full text-outline opacity-60" preserveaspectratio="none" viewbox="0 0 400 48">
+<path d="M0,24 C50,24 80,20 120,18 C160,16 200,10 240,6 C280,2 320,44 360,24 C380,24 400,24 400,24" fill="none" stroke="currentColor" stroke-dasharray="4,4" stroke-width="1.5"></path>
+</svg>
+<div class="absolute left-[40%] width-[22%] w-[25%] top-0 bottom-0 bg-primary/20 pointer-events-none"></div>
+<div class="absolute left-[45%] top-0 bottom-0 w-0.5 bg-secondary pointer-events-none"></div>
+</div>
+</div>
+</div>
+<!-- In-Painting & Section Regeneration Command Dock -->
+<div class="bg-surface-container-high rounded-xl p-4 shadow-lg flex flex-col md:flex-row items-center justify-between gap-4">
+<!-- Region Status -->
+<div class="flex items-center gap-3 w-full md:w-auto">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary flex-shrink-0">
+<span class="material-symbols-outlined text-2xl">select_all</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">Chorus Region Selected</span>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-mono-metric text-mono-metric font-semibold">1:12 - 1:48</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">Targeting 36 Bars for AI In-Painting &amp; Transform</span>
+</div>
+</div>
+<!-- In-Painting Generative Actions -->
+<div class="flex flex-wrap items-center gap-2 w-full md:w-auto justify-end">
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-secondary text-base">bolt</span>
+<span>More Energy</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-primary text-base">swap_horiz</span>
+<span>Swap Vocalist</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-highest hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-outline text-base">more_time</span>
+<span>+16 Bars</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary font-label-md text-label-md shadow-[0_0_18px_rgba(160,120,255,0.4)] transition-all">
+<span class="material-symbols-outlined text-base">auto_fix_high</span>
+<span>Regenerate Section</span>
+</button>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for BPM Tap and Studio transport toggle
+  const tapBtn = document.getElementById('tapBpm');
+  let tapTimes = [];
+  if (tapBtn) {
+    tapBtn.addEventListener('click', () => {
+      const now = Date.now();
+      tapTimes.push(now);
+      if (tapTimes.length > 4) tapTimes.shift();
+      if (tapTimes.length > 1) {
+        const intervals = [];
+        for (let i = 1; i < tapTimes.length; i++) {
+          intervals.push(tapTimes[i] - tapTimes[i - 1]);
+        }
+        const avg = intervals.reduce((a, b) => a + b) / intervals.length;
+        const bpm = Math.round(60000 / avg);
+        if (bpm >= 60 && bpm <= 220) {
+          const bpmDisplay = tapBtn.previousElementSibling;
+          if (bpmDisplay) bpmDisplay.textContent = bpm;
+        }
+      }
+    });
+  }
+
+  const studioPlay = document.getElementById('studioPlayBtn');
+  if (studioPlay) {
+    studioPlay.addEventListener('click', () => {
+      const icon = studioPlay.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.textContent = icon.textContent === 'play_arrow' ? 'pause' : 'play_arrow';
+      }
+    });
+  }
+</script></main></div><footer class="fixed bottom-0 left-0 right-0 h-24 bg-surface-container-lowest/95 backdrop-blur-2xl z-50 flex items-center justify-between px-6 shadow-[0_-1px_12px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-3.5 w-1/4 min-w-[240px]"><div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container-high flex-shrink-0"><div class="w-full h-full bg-gradient-to-br from-primary-container via-surface-container-highest to-secondary-container opacity-80 flex items-center justify-center"><span class="material-symbols-outlined text-on-surface text-2xl animate-pulse">album</span></div><div class="absolute bottom-1 right-1 px-1 rounded bg-surface-container-lowest/80 backdrop-blur-xs text-[9px] font-mono-metric text-secondary">AI</div></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2"><span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Celestial Echoes</span><span class="material-symbols-outlined text-secondary text-base animate-pulse">graphic_eq</span></div><span class="font-body-sm text-body-sm text-outline truncate">KAIRO • Generative Drift</span><div class="flex items-center gap-2 mt-1"><button class="text-tertiary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-base fill-current">favorite</span></button><span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors cursor-pointer">Stems / AI Info</span></div></div></div><div class="flex flex-col items-center gap-1.5 w-2/4 max-w-2xl px-4"><div class="flex items-center gap-5"><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-lg">shuffle</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-xl">skip_previous</span></button><button class="w-11 h-11 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(208,188,255,0.45)] hover:scale-105 transition-all"><span class="material-symbols-outlined text-2xl">pause</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-xl">skip_next</span></button><button class="text-secondary hover:text-secondary-fixed transition-colors p-1 relative"><span class="material-symbols-outlined text-lg">repeat</span><span class="absolute -top-0.5 -right-0.5 w-1 h-1 rounded-full bg-secondary"></span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-lg">repeat_one</span></button></div><div class="flex items-center gap-3 w-full"><span class="font-mono-metric text-mono-metric text-outline">01:42</span><div class="relative flex-1 h-2 bg-surface-container rounded-full cursor-pointer flex items-center group"><div class="absolute left-0 top-0 bottom-0 w-2/3 bg-surface-container-high rounded-full opacity-60"></div><div class="absolute left-0 top-0 bottom-0 w-[43%] bg-gradient-to-r from-secondary to-primary rounded-full shadow-[0_0_10px_rgba(76,215,246,0.5)]"></div><div class="absolute left-[43%] -ml-1.5 w-3 h-3 rounded-full bg-on-surface shadow-[0_0_8px_rgba(255,255,255,0.8)] scale-0 group-hover:scale-100 transition-transform"></div></div><span class="font-mono-metric text-mono-metric text-outline">03:54</span></div></div><div class="flex items-center justify-end gap-3.5 w-1/4 min-w-[240px]"><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Lyrics"><span class="material-symbols-outlined text-lg">subtitles</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Queue"><span class="material-symbols-outlined text-lg">format_list_bulleted</span></button><button class="text-secondary hover:text-secondary-fixed transition-colors p-1" title="Stem Mixer"><span class="material-symbols-outlined text-lg">instant_mix</span></button><div class="flex items-center gap-2 w-28 group"><button class="text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-lg">volume_up</span></button><div class="relative flex-1 h-1 bg-surface-container rounded-full overflow-hidden"><div class="w-3/4 h-full bg-on-surface-variant group-hover:bg-primary transition-colors"></div></div></div><div class="hidden 2xl:flex items-center px-2 py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-label-sm whitespace-nowrap"><span class="material-symbols-outlined text-xs text-secondary mr-1">high_quality</span>24b/96k Spatial</div></div></footer></body></html>

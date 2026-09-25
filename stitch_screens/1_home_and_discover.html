@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary-container": "#00424e", "tertiary-fixed": "#ffd9e4", "surface-dim": "#121317", "primary-fixed-dim": "#d0bcff", "surface-container-highest": "#343439", "secondary-container": "#03b5d3", "outline-variant": "#494454", "on-primary-container": "#340080", "secondary-fixed": "#acedff", "on-surface-variant": "#cbc3d7", "on-secondary-fixed": "#001f26", "surface-variant": "#343439", "on-tertiary": "#640039", "surface-container-lowest": "#0d0e12", "on-primary-fixed": "#23005c", "outline": "#958ea0", "primary-container": "#a078ff", "on-tertiary-container": "#570032", "surface-tint": "#d0bcff", "tertiary-fixed-dim": "#ffb0cd", "background": "#121317", "surface": "#121317", "on-error": "#690005", "on-secondary-fixed-variant": "#004e5c", "surface-container": "#1e1f24", "on-surface": "#e3e2e8", "error": "#ffb4ab", "tertiary-container": "#f751a1", "inverse-primary": "#6d3bd7", "on-error-container": "#ffdad6", "on-tertiary-fixed": "#3e0022", "inverse-on-surface": "#2f3035", "surface-bright": "#38393e", "on-background": "#e3e2e8", "on-primary-fixed-variant": "#5516be", "surface-container-high": "#292a2e", "tertiary": "#ffb0cd", "error-container": "#93000a", "surface-container-low": "#1a1b20", "primary-fixed": "#e9ddff", "on-primary": "#3c0091", "secondary-fixed-dim": "#4cd7f6", "primary": "#d0bcff", "on-secondary": "#003640", "inverse-surface": "#e3e2e8", "on-tertiary-fixed-variant": "#8c0053", "secondary": "#4cd7f6" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "margin-mobile": "1rem", "space-md": "1rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "margin": "2rem", "gutter": "1.5rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem" }, "fontFamily": { "label-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "mono-metric": ["JetBrains Mono"], "label-sm": ["Inter"], "body-md": ["Inter"], "display-hero": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"] }, "fontSize": { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "mono-metric": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen selection:bg-primary/20 selection:text-primary"><aside class="fixed left-0 top-0 bottom-24 w-64 bg-surface-container-lowest/90 backdrop-blur-2xl z-40 flex flex-col justify-between overflow-y-auto px-4 py-5 shadow-[0_1px_8px_rgba(0,0,0,0.12)]"><div class="flex flex-col gap-6"><div class="flex items-center justify-between px-2"><div class="flex items-center gap-3"><img alt="Brand logo. - Primary color: #8b5cf6
+- Font: plusJakartaSans
+- Mode: dark
+- Roundness: rounded-full
+" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V3MKQ7OouQ8tb-wkZ4v1B1aX8BxjVkIQDMkp3udWgyCPoaZ8-f1CMgPCredAg6icbg3pPCHgRdcV6uhG80GLji_hth9Vgl96YpZ45GYagBMMUBueqAhDPcR_UATHvqVRlWMAhssAhUVcTTd3xiKYgLxBP5ArNbv3QczJDlUhEWZSmJSM4eMCsOGHbWSLwFsE0RJEPioP72WHYxXfK4HyOtmNQaKq8beyNDz_eOxNZyu5xFuLMmFBvCshDj"/><span class="font-headline-sm text-headline-sm tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-secondary-fixed">Audify</span></div><span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm uppercase tracking-wider font-semibold">AI PRO</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(160,120,255,0.35)]"><span class="px-2.5 pb-1 text-outline font-label-sm text-label-sm uppercase tracking-wider">Discover &amp; Studio</span><a aria-current="page" class="flex items-center gap-3 px-3 py-2.5 transition-all group bg-primary-container text-on-primary-container font-semibold rounded-lg shadow-[0_0_16px_rgba(160,120,255,0.35)]" data-path="home-discover" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">explore</span><span class="font-label-lg text-label-lg">Home / Discover</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="mood-map" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">bubble_chart</span><span class="font-label-lg text-label-lg">Mood Map</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ai-dj" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">graphic_eq</span><span class="font-label-lg text-label-lg">AI DJ</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="audify-studio" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-secondary group-hover:text-secondary-fixed transition-colors text-xl">neurology</span><span class="font-label-lg text-label-lg">Audify Studio</span></div><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="library" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">queue_music</span><span class="font-label-lg text-label-lg">Library</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="remix-lab" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">tune</span><span class="font-label-lg text-label-lg">Remix Lab</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="sound-dna" href="#"><span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors text-xl">fingerprint</span><span class="font-label-lg text-label-lg">Sound DNA</span></a></nav><div class="flex flex-col gap-2 pt-2"><span class="px-2.5 text-outline font-label-sm text-label-sm uppercase tracking-wider">My Neural Playlists</span><div class="flex flex-col gap-1"><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="late-night-cyber-chill" href="#"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="truncate">Late Night Cyber-Chill</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="neural-beats-vol-1" href="#"><span class="w-1.5 h-1.5 rounded-full bg-primary"></span><span class="truncate">Neural Beats Vol. 1</span></a><a class="flex items-center gap-2 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="focus-stems" href="#"><span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span><span class="truncate">Focus Stems</span></a></div></div></div><div class="flex flex-col gap-4 pt-4"><div class="p-3.5 rounded-xl bg-surface-container-low/90 backdrop-blur-md flex flex-col gap-2"><div class="flex items-center justify-between font-label-sm text-label-sm"><span class="text-on-surface-variant flex items-center gap-1.5"><span class="material-symbols-outlined text-base text-secondary">bolt</span>AI Generation</span><span class="text-on-surface font-mono-metric text-mono-metric font-semibold">48 / 50</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full w-[96%]"></div></div><span class="text-outline font-label-sm text-label-sm">2 credits recharge in 4h</span></div><div class="flex items-center justify-between px-2 pt-1 font-label-sm text-label-sm text-on-surface-variant"><a class="flex items-center gap-1.5 hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-base">settings</span>Settings</a><a class="flex items-center gap-1.5 hover:text-on-surface transition-colors" data-path="help" href="#"><span class="material-symbols-outlined text-base">help</span>Help</a></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-2xl z-30 flex items-center justify-between px-6 shadow-[0_1px_8px_rgba(0,0,0,0.08)]"><div class="flex items-center gap-4 flex-1 max-w-2xl"><div class="relative flex-1 flex items-center"><span class="material-symbols-outlined absolute left-3 text-outline text-lg pointer-events-none">search</span><input class="w-full h-10 pl-9 pr-20 rounded-full bg-surface-container-low text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Ask Audify AI or search artists, stems, moods..." type="text"/><div class="absolute right-3 flex items-center gap-1 px-1.5 py-0.5 rounded bg-surface-container-high text-outline font-mono-metric text-mono-metric">⌘K</div></div><div class="hidden xl:flex items-center gap-1.5 font-label-sm text-label-sm"><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">⚡ Cyberpunk</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">🌊 Deep Ambient</button><button class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">🎹 Neo-Soul</button></div></div><div class="flex items-center gap-4"><button class="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-md text-label-md shadow-[0_0_20px_rgba(160,120,255,0.4)] hover:shadow-[0_0_26px_rgba(76,215,246,0.5)] transition-all"><span class="material-symbols-outlined text-base">auto_awesome</span><span>New Creation</span></button><div class="flex items-center gap-1"><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">forum</span></button><button class="relative p-2 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface-container-lowest animate-ping"></span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary"></span></button></div><div class="flex items-center gap-3 pl-2"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40" src="https://lh3.googleusercontent.com/aida/AEtjO1WrGF8SgoC55DQ9kCK-ntgHExVyjKDRx8L_RqIlRzhjtPHqcRzwBm1OXqFnnNwAH7WlXySxWf2NoPX0SM2Zb1o142qNlTMdwlfOsRlE9IdxvMls_w_5wnRfJoTfZrbjFnPee88PUTxzD1ED2VNf6pnUYxtH6duMflwV1x_egi8JVPRm48NRocSpr221ylt8EXtH4pvqupr0_QqgHwCA_qgpzi2g9pq5rdodPmNw0q8LA8pICnqWbfDDBMII"/><div class="hidden md:flex flex-col"><span class="font-label-md text-label-md text-on-surface leading-tight">Julian Vane</span><span class="font-label-sm text-label-sm text-secondary font-medium leading-tight">Pro Creator</span></div></div></div></header><main class="relative pt-16 pb-28 w-full px-8 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Dynamic Chromatic Background Accents -->
+<div class="relative w-full">
+<div class="absolute -top-12 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-[30rem] h-[30rem] bg-secondary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<!-- 1. Hero Header Banner (Elevated Glass & Cybernetic Audio Showcase) -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-low shadow-2xl p-8 lg:p-10 transition-all">
+<!-- Ambient Glow Behind Artwork -->
+<div class="absolute right-12 top-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-tr from-primary-container/30 to-secondary/30 rounded-full blur-[90px] pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row items-center justify-between gap-8">
+<!-- Left: Editorial & Playback Engine Meta -->
+<div class="flex flex-col gap-6 max-w-2xl">
+<div class="flex flex-wrap items-center gap-2.5">
+<span class="px-3 py-1 rounded-full bg-primary/15 text-primary font-label-md text-label-md flex items-center gap-1.5 shadow-[0_0_14px_rgba(208,188,255,0.2)]">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              NEURAL HIGHLIGHT
+            </span>
+<span class="px-3 py-1 rounded-full bg-surface-container text-secondary font-mono-metric text-mono-metric tracking-tight flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">auto_graph</span>
+              98% RESONANCE MATCH
+            </span>
+<span class="font-label-sm text-label-sm text-outline">Evening Coding Flow</span>
+</div>
+<div class="flex flex-col gap-2">
+<h1 class="font-display-hero text-display-hero text-on-surface tracking-tight leading-none">
+              Hyperlight Velocity
+            </h1>
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant font-medium">Synthwave Collective</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-mono-metric text-mono-metric text-secondary font-semibold">128 BPM • F# Minor</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface text-[10px] font-mono-metric font-bold tracking-widest">GEN-4 AUDIO</span>
+</div>
+</div>
+<!-- AI Insight Pill -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container/90 backdrop-blur-xl shadow-md flex items-center gap-3 max-w-xl">
+<div class="w-8 h-8 rounded-full bg-secondary/15 flex items-center justify-center flex-shrink-0 text-secondary">
+<span class="material-symbols-outlined text-lg">neurology</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-secondary font-semibold uppercase tracking-wider">AURA Engine Analysis</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+                Detected deep focus polyrhythms calibrated precisely for late-night logic architecture &amp; syntactic flow.
+              </p>
+</div>
+</div>
+<!-- Controls CTA Hub -->
+<div class="flex flex-wrap items-center gap-3 pt-2">
+<button class="flex items-center gap-2.5 px-7 py-3 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-label-lg text-label-lg shadow-[0_0_24px_rgba(160,120,255,0.4)] hover:shadow-[0_0_36px_rgba(76,215,246,0.6)] hover:scale-[1.02] transition-all">
+<span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+<span>Play Now</span>
+</button>
+<button class="flex items-center gap-2 px-5 py-3 rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-bright transition-all">
+<span class="material-symbols-outlined text-lg">bookmark_add</span>
+<span>Save to Library</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-3 rounded-full bg-surface-container text-secondary font-label-lg text-label-lg hover:bg-surface-container-highest transition-all group">
+<span class="material-symbols-outlined text-lg group-hover:rotate-45 transition-transform">call_split</span>
+<span>Split 4-Stems</span>
+</button>
+</div>
+</div>
+<!-- Right: Audio Artwork Canvas with Reactive Waveform Overlay -->
+<div class="relative group w-full sm:w-80 lg:w-96 aspect-square rounded-xl overflow-hidden shadow-2xl flex-shrink-0 bg-surface-container-highest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Hyper-detailed digital art album cover for Hyperlight Velocity, featuring radiant neon violet and electric cyan audio geometric spectrums exploding across a sleek futuristic midnight city highway, volumetric mist, high fidelity, 8k render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDed35kDD-n2OieMadL6NPwl8LSKz5zg7iXd2gLRzjNWuAH9avDUXPozZNDvSP6-oHybsqHs-NPhZMUzNDm2aV6k8zIGm_vhT2Gh94n4tTyxIxXQxpjIKoCsW7f850JyfMyQ98FT3_5LcCTag-xxGAd10jkmvawWsh62sRHaVSd6xP8Ipug2rVmdD8nNaMOpqCC4BzPYLeYZRP-CxhBKuI3J-59jSSl7BXlctBB0mfUJoGW-Pm9UsA7HA"/>
+<!-- Frosted Audio Stem Preview Bar Overlay -->
+<div class="absolute inset-x-3 bottom-3 p-3.5 rounded-DEFAULT bg-surface-container-lowest/85 backdrop-blur-2xl flex flex-col gap-2 shadow-lg">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface flex items-center gap-1.5 font-medium">
+<span class="material-symbols-outlined text-secondary text-sm">graphic_eq</span>
+                Live Stem Spectrum
+              </span>
+<span class="font-mono-metric text-mono-metric text-outline">Spatial 96k</span>
+</div>
+<!-- Reactive sound waves SVG -->
+<div class="w-full h-8 flex items-end gap-1 px-1">
+<span class="flex-1 bg-secondary/80 rounded-full h-[65%] animate-pulse"></span>
+<span class="flex-1 bg-primary/90 rounded-full h-[90%]"></span>
+<span class="flex-1 bg-secondary-fixed rounded-full h-[40%] animate-pulse"></span>
+<span class="flex-1 bg-primary-container rounded-full h-[80%]"></span>
+<span class="flex-1 bg-secondary rounded-full h-[100%] animate-pulse"></span>
+<span class="flex-1 bg-primary rounded-full h-[55%]"></span>
+<span class="flex-1 bg-secondary rounded-full h-[70%]"></span>
+<span class="flex-1 bg-tertiary rounded-full h-[35%] animate-pulse"></span>
+<span class="flex-1 bg-primary rounded-full h-[95%]"></span>
+<span class="flex-1 bg-secondary-fixed rounded-full h-[60%] animate-pulse"></span>
+<span class="flex-1 bg-primary rounded-full h-[85%]"></span>
+<span class="flex-1 bg-secondary rounded-full h-[45%]"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. Quick Filters (Tactile Filter Chips) -->
+<section class="mt-8 flex items-center justify-between gap-4 overflow-x-auto pb-2 scrollbar-none">
+<div class="flex items-center gap-2.5">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-[0_0_16px_rgba(208,188,255,0.35)] flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary"></span>
+          All Sonic Feeds
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-secondary">smart_toy</span>
+          AI Generations
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          🌙 Late Night
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">terminal</span>
+          Deep Coding
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          ⚡ Cyber-Funk
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-tertiary">surround_sound</span>
+          Spatial Stems
+        </button>
+<button class="px-4 py-2 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md hover:text-on-surface hover:bg-surface-container-high transition-colors">
+          🌌 Ambient Drones
+        </button>
+</div>
+<div class="hidden md:flex items-center gap-2 flex-shrink-0">
+<span class="font-label-sm text-label-sm text-outline">Order by:</span>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm flex items-center gap-1 hover:bg-surface-container transition-colors">
+          Neural Affinity
+          <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</section>
+<!-- 3. Interactive Grid: Your Daily AI Mixes (4 Wide Cards) -->
+<section class="mt-10 flex flex-col gap-5">
+<div class="flex items-end justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-mono-metric text-mono-metric text-secondary tracking-widest uppercase font-semibold">SYNTHESIZED DAILY • 06:00 UTC</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Your Daily AI Mixes</h2>
+</div>
+<a class="font-label-lg text-label-lg text-primary hover:text-primary-fixed transition-colors flex items-center gap-1 group" href="#">
+          Browse Archive
+          <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+<!-- Daily Mix 1 -->
+<div class="group relative rounded-xl bg-surface-container-low p-4 flex flex-col gap-4 shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic cyber bass album art, deep ultraviolet neon lights illuminating glowing robotic vocal chords and digital sound wave nodes, highly stylized aesthetic, clean octane render." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDArFU4qy3AXoc5VwB5YvkSeElaYpFKDfez_iPrZ5qrnCtzqGykDxoCeq9nExl0n9T773etEUv1VxyyGTajH_uPe3r8uI0tKbf9RitqT-6T-LYRLK_Gm3t8a3mX74xgMBB1Hve9dB_3KQ-yhQf-tGGPJQKANaKPU1C3rzltLVvG0w6Xm7gOUCX7J8v5GRcoASppNJDozxcbori5RZW519oONL0-SeKw0QRQ7f6EWLFGZHBLfhh0Stdc1Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<button class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[0_0_20px_rgba(76,215,246,0.6)] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-mono-metric text-mono-metric">
+              32 Tracks
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors truncate">
+                Cyber-Bass &amp; Vocal Chops
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Deep sub-frequencies fused with pitch-shifted synthetic vocal layers.
+            </p>
+</div>
+<!-- Soundwave Bar Decorator -->
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-2/3 h-full bg-gradient-to-r from-secondary to-primary rounded-full"></div>
+</div>
+</div>
+<!-- Daily Mix 2 -->
+<div class="group relative rounded-xl bg-surface-container-low p-4 flex flex-col gap-4 shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ambient neural chill album artwork, soft glowing lavender bioluminescent waves gently drifting through a calm dark cosmic sea, meditative high contrast, deep focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAviS7ZqdyGO_-LdVWzH4XiIVq8V0FU3JRNUUE7ScRgGrkgJo_hwI2OVH5orqWO_-eYQM2PP2bofePRCMKxZtY1aTlIZ_JZvgLEhnvFcCUNr8iiHhfoBGZRrjMXM1DNhBR7uFkkRoxvFV6umSwbkCkCkXW7eEpcQSxG1CjdTPBH3hRrUigO-QskcSYq5-NvC0ocZ0f6vOfGi9Su1rRQJvdGC4QVi2U5f9i3w9dYS2n5xcsOJQVXIa-M3w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<button class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(208,188,255,0.6)] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-mono-metric text-mono-metric">
+              24 Tracks
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors truncate">
+                Ambient Neural Chill
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Float through non-linear pads and theta-wave harmonic soundscapes.
+            </p>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-1/2 h-full bg-gradient-to-r from-primary to-tertiary rounded-full"></div>
+</div>
+</div>
+<!-- Daily Mix 3 -->
+<div class="group relative rounded-xl bg-surface-container-low p-4 flex flex-col gap-4 shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High energy future drum and bass album cover, sharp laser geometry, fast electric teal streaks and complex mechanical syncopation visualization in deep space." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlp0JLxppeF47OiFQpCPcl0DCjZvZzosX7fVzJM1jhiOi-Ljl3VSStZS5_XNhk0mSdE3Lj8vWy3LCAF4J89wnBj_hLYv1WPrzuayaklFG-IR-2NOMJwGxwtPoWRdPWk-OGAIxydUzw39TuPfidFIhUBZ7je3ty7eHGkbrdHVFFqgX8agUWXznT2jOcdgApXtkCPdH3mxnLRGHZcL5oTIlwNK6jtxDNOwDcV9UKH6Z-WbRaUsLFfFlfXg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<button class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-[0_0_20px_rgba(76,215,246,0.6)] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-mono-metric text-mono-metric">
+              40 Tracks
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-secondary transition-colors truncate">
+                Future DnB &amp; Synthetics
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              174 BPM hyper-velocity drum chops, reese basses, and algorithmic breakcore.
+            </p>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-4/5 h-full bg-gradient-to-r from-secondary-container to-secondary rounded-full"></div>
+</div>
+</div>
+<!-- Daily Mix 4 -->
+<div class="group relative rounded-xl bg-surface-container-low p-4 flex flex-col gap-4 shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="relative w-full aspect-square rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Ethereal lo-fi grand piano bathed in soft moody cyan and magenta dusk lighting, tape grain, acoustic warmth, glowing dust particles drifting in air." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi0riit7rIY96LPc3MWWJi-mL8fjjiV8JHpXGxPjgJpEiKsYU0S29DqgHGR6n-kGkO64eSs2ggy07m5QHCb3sNHq6R1fABYGt7rS4FtT5UCAprqZSqSvRv_xUnd-V4gsjV-lWeOpwqCshY2uNxpv3HlKHmnD68lCJIMTbm1MHxR8dM3tZYVMwKsPrF1IijARF3DMRYGwCGgncMbNBYbKUdokXLbL05k87LsLr1FvH_iF3RZVxkQYC5sw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-transparent to-transparent"></div>
+<button class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-tertiary-container text-on-tertiary flex items-center justify-center shadow-[0_0_20px_rgba(247,81,161,0.6)] opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+<span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-mono-metric text-mono-metric">
+              18 Tracks
+            </span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-tertiary transition-colors truncate">
+                Ethereal Lo-Fi Piano
+              </h3>
+</div>
+<p class="font-body-sm text-body-sm text-outline line-clamp-2">
+              Gentle felt-hammer keystrokes, cassette flutter, and lush generative vinyl hiss.
+            </p>
+</div>
+<div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden flex">
+<div class="w-1/3 h-full bg-gradient-to-r from-tertiary to-primary rounded-full"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Two-Column Power Section (Trending AI Creations & AI Sound DNA) -->
+<section class="mt-14 grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Left Column (Trending AI Community Creations - 60%) -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-DEFAULT bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">hub</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Trending AI Community Stems</h2>
+<span class="font-body-sm text-body-sm text-outline">Open-source prompts, stem remix permissions &amp; community models</span>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-bright transition-colors">
+            View All Prompts
+          </button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Community Item 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3.5 group shadow-md">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-high flex-shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Microscopic holographic crystal sound wave structure, neon purple refractions, dark background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGD3ZsMqhJrFmzKy5kiRDKSkneq5JZ2UEMJl6_PpOgyaBcEuQGJ_iZ2oZg_WhGfANPQHwhzOenNqtrjAKzBwXeQbZ23qLbHnVK3t_QghG0A8xmotjNLthZpX4-bodLnxkTXJ8vpBKE9qCdGfS-0Ejmr5QVYAlCw6i-6BDhL3c2L7gw6CZKKKDzSdSsStw5igGjnFzIgCNOdJlJr33lKEtQDYoiaLCLem4VnCBaYrnOIpm3Oo5G6M7H4Q"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 flex items-center justify-center group-hover:opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-secondary text-lg">play_arrow</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Sub-Zero Glitch Dimension</span>
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-mono-metric text-[10px] font-bold">4 STEMS</span>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span>by @alx_generator</span>
+<span>•</span>
+<span class="font-mono-metric text-mono-metric">14.2k plays</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm">fork_right</span>
+<span>Fork Prompt</span>
+</button>
+<button class="p-1.5 rounded-full text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Prompt Meta Box -->
+<div class="p-2.5 rounded bg-surface-container-lowest/80 text-on-surface-variant font-mono-metric text-mono-metric flex items-center justify-between gap-3">
+<span class="truncate text-outline">
+<span class="text-primary font-semibold">prompt:</span> "analog modular reese bass, glitch artifacts, 140 bpm, dystopian brutalist reverb, granular decay"
+              </span>
+<span class="text-secondary flex-shrink-0 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">bolt</span>
+                Model v4.2
+              </span>
+</div>
+<!-- Interactive Waveform Strip -->
+<div class="flex items-center gap-2">
+<div class="flex-1 h-3 flex items-center gap-0.5 px-1 bg-surface-container-highest/40 rounded">
+<span class="w-1 bg-primary h-[30%] rounded-full"></span>
+<span class="w-1 bg-primary h-[70%] rounded-full"></span>
+<span class="w-1 bg-primary h-[90%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[50%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[80%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[100%] rounded-full"></span>
+<span class="w-1 bg-primary h-[60%] rounded-full"></span>
+<span class="w-1 bg-primary h-[40%] rounded-full"></span>
+<span class="w-1 bg-secondary-container h-[20%] rounded-full"></span>
+<span class="w-1 bg-primary h-[85%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[95%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[40%] rounded-full"></span>
+<span class="w-1 bg-outline h-[20%] rounded-full"></span>
+<span class="w-1 bg-outline h-[35%] rounded-full"></span>
+<span class="w-1 bg-outline h-[15%] rounded-full"></span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline">03:14</span>
+</div>
+</div>
+<!-- Community Item 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all flex flex-col gap-3.5 group shadow-md">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-center gap-3.5 min-w-0">
+<div class="w-12 h-12 rounded-DEFAULT bg-surface-container-high flex-shrink-0 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cybernetic violin in glass prism refraction, neon cyan laser beams, ethereal deep indigo atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_4XTh7yPl6ccp9OEEcIjDrWcrLuHlAxRSuF8E8-BxHWdWf-2Go2XZ2JOevgk980v9CJu3HkSQjbxq6wnOYZsqakm9NxmKTPT-0t8xe1iNU8oe0MhLvAy1Jq43uOd3K2bJXWEehEXgbXoG57YktEGz2RYeHbPNEm0AdSTZDtI4qroXuK6nS83h7_lItYz6WMceP_sa8grNd7yTRPJ2fyp5XxpS2JF2Qr0aHZGrxPS4TBBxVsvZqdYm0Q"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 flex items-center justify-center group-hover:opacity-0 transition-opacity">
+<span class="material-symbols-outlined text-secondary text-lg">play_arrow</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Neo-Kyoto Blade Theme</span>
+<span class="px-2 py-0.5 rounded bg-primary/15 text-primary font-mono-metric text-[10px] font-bold">ISOLATED KICK</span>
+</div>
+<div class="flex items-center gap-2 text-outline font-label-sm text-label-sm">
+<span>by @kenji_neural</span>
+<span>•</span>
+<span class="font-mono-metric text-mono-metric">28.9k plays</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high text-primary hover:bg-primary hover:text-on-primary font-label-sm text-label-sm transition-all shadow-sm">
+<span class="material-symbols-outlined text-sm">fork_right</span>
+<span>Fork Prompt</span>
+</button>
+<button class="p-1.5 rounded-full text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-lowest/80 text-on-surface-variant font-mono-metric text-mono-metric flex items-center justify-between gap-3">
+<span class="truncate text-outline">
+<span class="text-primary font-semibold">prompt:</span> "cyberpunk shamisen blended with moog ladder filter, rainy asphalt reverberation, tape saturation"
+              </span>
+<span class="text-secondary flex-shrink-0 text-xs flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">bolt</span>
+                Model v4.1
+              </span>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-3 flex items-center gap-0.5 px-1 bg-surface-container-highest/40 rounded">
+<span class="w-1 bg-primary h-[80%] rounded-full"></span>
+<span class="w-1 bg-primary h-[40%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[70%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[60%] rounded-full"></span>
+<span class="w-1 bg-primary h-[90%] rounded-full"></span>
+<span class="w-1 bg-primary h-[30%] rounded-full"></span>
+<span class="w-1 bg-secondary h-[50%] rounded-full"></span>
+<span class="w-1 bg-outline h-[20%] rounded-full"></span>
+<span class="w-1 bg-outline h-[40%] rounded-full"></span>
+<span class="w-1 bg-outline h-[10%] rounded-full"></span>
+</div>
+<span class="font-mono-metric text-mono-metric text-outline">02:48</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column (AI Sound DNA & Live Resonance - 40%) -->
+<div class="lg:col-span-5 xl:col-span-4 flex flex-col gap-5">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-DEFAULT bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">fingerprint</span>
+</div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Sound DNA Profile</h2>
+<span class="font-body-sm text-body-sm text-outline">Julian Vane • Weekly Acoustic Sync</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-on-surface">tune</span>
+</div>
+<div class="p-6 rounded-xl bg-surface-container-low flex flex-col gap-6 shadow-xl">
+<!-- Circular Resonance Visualizer SVG -->
+<div class="relative flex items-center justify-center w-full py-2">
+<svg class="w-48 h-48 transform -rotate-90" viewbox="0 0 120 120">
+<!-- Background Ring -->
+<circle class="text-surface-container-highest" cx="60" cy="60" fill="none" opacity="0.4" r="48" stroke="currentColor" stroke-width="8"></circle>
+<!-- Electronic (42%) -->
+<circle class="text-primary" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="174.9" stroke-linecap="round" stroke-width="8"></circle>
+<!-- Ambient (27%) -->
+<circle class="text-secondary" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="220.1" stroke-linecap="round" stroke-width="8" transform="rotate(151.2 60 60)"></circle>
+<!-- Glitch (18%) -->
+<circle class="text-tertiary" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="247.3" stroke-linecap="round" stroke-width="8" transform="rotate(248.4 60 60)"></circle>
+<!-- Neo-Classical (13%) -->
+<circle class="text-secondary-fixed" cx="60" cy="60" fill="none" r="48" stroke="currentColor" stroke-dasharray="301.59" stroke-dashoffset="262.3" stroke-linecap="round" stroke-width="8" transform="rotate(313.2 60 60)"></circle>
+</svg>
+<!-- Center Metric Badge -->
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-mono-metric text-mono-metric text-secondary font-bold">DNA MATCH</span>
+<span class="font-headline-xl text-headline-xl text-on-surface font-extrabold leading-none">94.8</span>
+<span class="font-label-sm text-label-sm text-outline">High Purity</span>
+</div>
+</div>
+<!-- Frequency Distribution Legend Grid -->
+<div class="grid grid-cols-2 gap-3 font-label-md text-label-md">
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+                Electronic
+              </span>
+<span class="font-mono-metric text-mono-metric text-on-surface font-semibold">42%</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                Ambient
+              </span>
+<span class="font-mono-metric text-mono-metric text-on-surface font-semibold">27%</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+                Glitch / Break
+              </span>
+<span class="font-mono-metric text-mono-metric text-on-surface font-semibold">18%</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container flex items-center justify-between">
+<span class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed"></span>
+                Neo-Classical
+              </span>
+<span class="font-mono-metric text-mono-metric text-on-surface font-semibold">13%</span>
+</div>
+</div>
+<!-- Predictive Recommendation Pill -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container-high/70 flex flex-col gap-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">psychology</span>
+                Dynamic Recommendation
+              </span>
+<span class="text-outline font-mono-metric text-mono-metric">BPM: 122 - 134</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Your evening brainwave pattern responds best to <strong class="text-on-surface">granular re-synthesis</strong> with low vocal dominance.
+            </p>
+<button class="mt-1 w-full py-2 rounded-full bg-surface-bright text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-colors">
+              Synthesize Targeted Session
+            </button>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Bottom Carousel: Top AI Curators & Virtual Producers -->
+<section class="mt-14 mb-6 flex flex-col gap-5">
+<div class="flex items-end justify-between">
+<div class="flex flex-col gap-1">
+<span class="font-mono-metric text-mono-metric text-primary tracking-widest uppercase font-semibold">COMMUNITY ELITE • VERIFIED MODELS</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Top AI Curators &amp; Virtual Producers</h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_left</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container-low text-on-surface flex items-center justify-center hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-lg">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+<!-- Producer Card 1 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-lg hover:bg-surface-container transition-all group">
+<div class="flex items-center gap-3.5">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Futuristic cybernetic female avatar face with neon purple glowing visor, sleek minimalist digital producer portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE_wZg4FV-a5feH4ap8D9hsj3-OF1sFV2v8DurgrowafbY1HnnD926u5r6ESbWSR97cqIiQMFg9mjws6nUI-s0FFlH_oijgGbbAl8E__P-7R20OzNWdls61dLHIlaH_-bzBh0R8Zyl0EbTBV51Gy3hnFL4QIyy670En-vcSAJt7XJAuZsaG3sQqf_8n1o2evS1QgmEKBJBLGmgQtd7ucZehmHI63Xxnm-3DXPnRxo6d2IZvunC3SeuNA"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Elysia_01</h4>
+<span class="material-symbols-outlined text-primary text-sm" title="Verified AI Entity">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">184.2k followers</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Cyber-Symphonic</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary">Neural Drill</span>
+</div>
+<button class="w-full py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">
+            Follow
+          </button>
+</div>
+<!-- Producer Card 2 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-lg hover:bg-surface-container transition-all group">
+<div class="flex items-center gap-3.5">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Abstract chrome cyber skull producer persona with electric blue fiber optic dreadlocks, dark reflective studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU34XH-rmRIUpfx9ItpyhC74shgXW0vAJiST6aHO2W9biLrTIUsFveZ5YkgFYkZ8chMUzqjW8GZJwIpWdDwHBWPIrOKcNmiFD3hRsK8wEBvZbs3UzF8zUnR34mN_ABxClBkr82EHDhg-UXUSorxzhxZT3QdMl7vbBoQI4WbU40xNJ05_NEvVp-6P8en7ohfZYNBk9rlZUrE5zcPf3IRr2E523mbtOmUHP3WbqT6yPrFOroYnId39_-Jg"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Voxel Phantom</h4>
+<span class="material-symbols-outlined text-primary text-sm" title="Verified AI Entity">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">96.5k followers</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Halftime Glitch</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary">Spatial Bass</span>
+</div>
+<button class="w-full py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">
+            Follow
+          </button>
+</div>
+<!-- Producer Card 3 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-lg hover:bg-surface-container transition-all group">
+<div class="flex items-center gap-3.5">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Holographic translucent glass mannequin head vibrating with pink and cyan sound frequencies, clean backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuMQXdnNeXACNEU3nFWjpgEx9XGQpoOH8dVKhevqjNuu7ofCqa2OWiKXJh571REn6rq1VvPkmSPUj5sbutT-Z3DjTxufIO9-dE_zmW3jZQfi1SA_4Dhde8poZLIUFSD_ENdV-9IeQ0k4JARb-WWrKllTOK2ggB3eT1xJfhm2Ydh92lzuyA-q7WJ7haJMMVJvVmC3nshuFXta9Y6O6KDDzQwaeVZVFvXnVpiYfcvyzJxLXhktbUAvNS6Q"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">Aetheria Resonance</h4>
+<span class="material-symbols-outlined text-primary text-sm" title="Verified AI Entity">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">312.8k followers</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Sleep Drone</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-tertiary">Binaural Pad</span>
+</div>
+<button class="w-full py-2 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary hover:text-on-primary transition-all">
+            Follow
+          </button>
+</div>
+<!-- Producer Card 4 -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-4 shadow-lg hover:bg-surface-container transition-all group">
+<div class="flex items-center gap-3.5">
+<div class="relative w-14 h-14 rounded-full overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Geometric chrome polyhedron spinning with bright cyan neon inner reactor, digital music producer badge." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZyCKvA4PbmwpsNt3GWKI-Cu76S85ZDcEGIyifVWqaJztIiONbELDhYZ1T6ujbIrMKUQzh1P057pxLAH3fr3OXAxwpzLo-UnrhVF0A-JjEClljZyRnx3zBe3iKTJt99wATbIRnXV_CLTcWVu4icqlPWCI_lG2W_iCvVvsadsFcr6sfgsfxdj6xUIl4qnOwZaIowLyJO2OLJndLMfmpi2MT3JtklhD6B-MC6lU6XyZUzzruLXY3WUPenA"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 rounded-full bg-secondary ring-2 ring-surface-container-low"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold truncate">KAIRO Audio Core</h4>
+<span class="material-symbols-outlined text-primary text-sm" title="Verified AI Entity">verified</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline">540.1k followers</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant">Generative Drift</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary">Modular Lo-Fi</span>
+</div>
+<button class="w-full py-2 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-md hover:brightness-110 transition-all">
+            Following
+          </button>
+</div>
+</div>
+</section>
+</div>
+</div></main></div><footer class="fixed bottom-0 left-0 right-0 h-24 bg-surface-container-lowest/95 backdrop-blur-2xl z-50 flex items-center justify-between px-6 shadow-[0_-1px_12px_rgba(0,0,0,0.3)]"><div class="flex items-center gap-3.5 w-1/4 min-w-[240px]"><div class="relative w-14 h-14 rounded-xl overflow-hidden bg-surface-container-high flex-shrink-0"><div class="w-full h-full bg-gradient-to-br from-primary-container via-surface-container-highest to-secondary-container opacity-80 flex items-center justify-center"><span class="material-symbols-outlined text-on-surface text-2xl animate-pulse">album</span></div><div class="absolute bottom-1 right-1 px-1 rounded bg-surface-container-lowest/80 backdrop-blur-xs text-[9px] font-mono-metric text-secondary">AI</div></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-2"><span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Celestial Echoes</span><span class="material-symbols-outlined text-secondary text-base animate-pulse">graphic_eq</span></div><span class="font-body-sm text-body-sm text-outline truncate">KAIRO • Generative Drift</span><div class="flex items-center gap-2 mt-1"><button class="text-tertiary hover:scale-110 transition-transform"><span class="material-symbols-outlined text-base fill-current">favorite</span></button><span class="px-1.5 py-0.2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-primary transition-colors cursor-pointer">Stems / AI Info</span></div></div></div><div class="flex flex-col items-center gap-1.5 w-2/4 max-w-2xl px-4"><div class="flex items-center gap-5"><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-lg">shuffle</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-xl">skip_previous</span></button><button class="w-11 h-11 rounded-full bg-gradient-to-r from-primary to-secondary text-on-primary flex items-center justify-center shadow-[0_0_20px_rgba(208,188,255,0.45)] hover:scale-105 transition-all"><span class="material-symbols-outlined text-2xl">pause</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-xl">skip_next</span></button><button class="text-secondary hover:text-secondary-fixed transition-colors p-1 relative"><span class="material-symbols-outlined text-lg">repeat</span><span class="absolute -top-0.5 -right-0.5 w-1 h-1 rounded-full bg-secondary"></span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1"><span class="material-symbols-outlined text-lg">repeat_one</span></button></div><div class="flex items-center gap-3 w-full"><span class="font-mono-metric text-mono-metric text-outline">01:42</span><div class="relative flex-1 h-2 bg-surface-container rounded-full cursor-pointer flex items-center group"><div class="absolute left-0 top-0 bottom-0 w-2/3 bg-surface-container-high rounded-full opacity-60"></div><div class="absolute left-0 top-0 bottom-0 w-[43%] bg-gradient-to-r from-secondary to-primary rounded-full shadow-[0_0_10px_rgba(76,215,246,0.5)]"></div><div class="absolute left-[43%] -ml-1.5 w-3 h-3 rounded-full bg-on-surface shadow-[0_0_8px_rgba(255,255,255,0.8)] scale-0 group-hover:scale-100 transition-transform"></div></div><span class="font-mono-metric text-mono-metric text-outline">03:54</span></div></div><div class="flex items-center justify-end gap-3.5 w-1/4 min-w-[240px]"><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Lyrics"><span class="material-symbols-outlined text-lg">subtitles</span></button><button class="text-on-surface-variant hover:text-on-surface transition-colors p-1" title="Queue"><span class="material-symbols-outlined text-lg">format_list_bulleted</span></button><button class="text-secondary hover:text-secondary-fixed transition-colors p-1" title="Stem Mixer"><span class="material-symbols-outlined text-lg">instant_mix</span></button><div class="flex items-center gap-2 w-28 group"><button class="text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-lg">volume_up</span></button><div class="relative flex-1 h-1 bg-surface-container rounded-full overflow-hidden"><div class="w-3/4 h-full bg-on-surface-variant group-hover:bg-primary transition-colors"></div></div></div><div class="hidden 2xl:flex items-center px-2 py-0.5 rounded-full bg-surface-container text-outline font-label-sm text-label-sm whitespace-nowrap"><span class="material-symbols-outlined text-xs text-secondary mr-1">high_quality</span>24b/96k Spatial</div></div></footer></body></html>
