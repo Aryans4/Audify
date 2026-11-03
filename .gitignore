@@ -1,9 +1,8 @@
 # Dependencies
 node_modules/
-FrontendLearn/node_modules/
 
 # Production / Build
-FrontendLearn/dist/
+Frontend/dist/
 dist/
 build/
 

@@ -41,14 +41,14 @@ A modern, high-performance music streaming and artist studio platform built with
 
 ## 🚀 Getting Started
 
-### 1. Clone & Setup Backend
+### 1. Setup Backend
 
 ```bash
-# Install backend dependencies
+# Install dependencies from the repository root
 npm install
 
 # Setup environment variables
-cp .env.example .env
+Copy-Item .env.example .env
 ```
 
 Fill in your `.env` credentials:
@@ -64,13 +64,13 @@ Start the backend server:
 ```bash
 npm start
 # or with nodemon
-npx nodemon server.js
+npm run dev
 ```
 
 ### 2. Setup Frontend
 
 ```bash
-cd FrontendLearn
+cd Frontend
 npm install
 npm run dev
 ```
@@ -84,17 +84,21 @@ The application will be running at `http://localhost:5173`.
 ```
 ├── .env.example          # Environment variables template
 ├── .gitignore            # Git ignore configuration
-├── package.json          # Backend package config
-├── server.js             # Application entrypoint
-├── src/
+├── package.json          # Backend package config and scripts
+├── package-lock.json     # Backend dependency lockfile
+├── .env                  # Local backend configuration (not committed)
+├── Backend/              # Express + MongoDB backend
 │   ├── app.js            # Express app configuration
+│   ├── server.js         # Database connection and HTTP entrypoint
 │   ├── controllers/      # Route controllers (Auth, Music)
 │   ├── db/               # Database connection
 │   ├── middlewares/      # Auth & validation middlewares
 │   ├── models/           # Mongoose schemas (User, Music, Album)
 │   ├── routes/           # Express API routes
 │   └── services/         # ImageKit storage services
-└── FrontendLearn/        # React + Vite frontend application
+└── Frontend/             # React + Vite frontend application
+    ├── package.json      # Frontend dependencies and scripts
+    ├── package-lock.json # Frontend dependency lockfile
     ├── src/
     │   ├── components/   # UI components (player, artist studio, modals, layout)
     │   ├── context/      # React contexts (Auth, Audio, Toast)
