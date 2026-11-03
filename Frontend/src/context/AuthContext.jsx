@@ -1,8 +1,13 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 import { apiFetch } from '../services/api';
 import { useToast } from './ToastContext';
 
 const AuthContext = createContext(null);
+
+function getInitialAuthRoute() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('resetToken') ? 'reset' : 'login';
+}
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(() => {
@@ -14,8 +19,8 @@ export function AuthProvider({ children }) {
   });
 
   const [token, setToken] = useState(() => localStorage.getItem('pw_token') || '');
-  const [isAuthModalOpen, setIsAuthModalOpen] = useState(false);
-  const [authTab, setAuthTab] = useState('login');
+  const [isAuthModalOpen, setIsAuthModalOpen] = useState(() => getInitialAuthRoute() === 'reset');
+  const [authTab, setAuthTab] = useState(getInitialAuthRoute);
   
   // For artists: 'studio' (Creator Dashboard) or 'listener' (Standard Streaming)
   const [artistViewMode, setArtistViewMode] = useState(() => {
@@ -25,6 +30,34 @@ export function AuthProvider({ children }) {
   const { showToast } = useToast();
 
   const isArtist = user?.role === 'artist';
+
+  useEffect(() => {
+    if (!token) return undefined;
+    let active = true;
+
+    apiFetch('/api/auth/me')
+      .then((res) => {
+        if (!active || !res.user) return;
+        localStorage.setItem('pw_user', JSON.stringify(res.user));
+        setUser(res.user);
+      })
+      .catch((error) => {
+        if (!active) return;
+        if (error.status === 401) {
+          localStorage.removeItem('pw_token');
+          localStorage.removeItem('pw_user');
+          setToken('');
+          setUser(null);
+          showToast('Your session expired. Please sign in again.', 'info');
+        } else {
+          showToast('Could not verify your session. Check your connection and try again.', 'error');
+        }
+      });
+
+    return () => {
+      active = false;
+    };
+  }, [token, showToast]);
 
   const setViewMode = (mode) => {
     setArtistViewMode(mode);
@@ -98,15 +131,39 @@ export function AuthProvider({ children }) {
     return res;
   };
 
-  const logout = async () => {
-    try {
-      await apiFetch('/api/auth/logout', { method: 'POST' });
-    } catch (_) {}
+  const requestPasswordReset = async (email) => apiFetch('/api/auth/forgot-password', {
+    method: 'POST',
+    body: JSON.stringify({ email }),
+  });
+
+  const resetPassword = async ({ token: resetToken, password }) => {
+    const res = await apiFetch('/api/auth/reset-password', {
+      method: 'POST',
+      body: JSON.stringify({ token: resetToken, password }),
+    });
+
     localStorage.removeItem('pw_token');
     localStorage.removeItem('pw_user');
     setToken('');
     setUser(null);
-    showToast('Signed out successfully', 'info');
+    return res;
+  };
+
+  const logout = async () => {
+    let logoutError;
+    try {
+      await apiFetch('/api/auth/logout', { method: 'POST' });
+    } catch (error) {
+      logoutError = error;
+    }
+    localStorage.removeItem('pw_token');
+    localStorage.removeItem('pw_user');
+    setToken('');
+    setUser(null);
+    showToast(
+      logoutError ? 'Signed out on this device, but the server could not confirm sign-out.' : 'Signed out successfully',
+      logoutError ? 'error' : 'info'
+    );
   };
 
   return (
@@ -124,6 +181,8 @@ export function AuthProvider({ children }) {
         closeAuthModal,
         login,
         register,
+        requestPasswordReset,
+        resetPassword,
         logout,
       }}
     >

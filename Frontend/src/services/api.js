@@ -30,7 +30,9 @@ export async function apiFetch(endpoint, options = {}) {
     } else if (Array.isArray(data.errors) && data.errors.length > 0) {
       errorMsg = data.errors[0]?.msg || data.errors[0]?.message || 'Validation error';
     }
-    throw new Error(errorMsg);
+    const error = new Error(errorMsg);
+    error.status = response.status;
+    throw error;
   }
   return data;
 }

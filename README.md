@@ -54,11 +54,20 @@ Copy-Item .env.example .env
 Fill in your `.env` credentials:
 ```env
 MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
+JWT_SECRET=generate_a_long_random_secret
 IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
 IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
 IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
+FRONTEND_URL=https://audify-music.netlify.app
+CORS_ORIGINS=https://audify-music.netlify.app
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=your_smtp_username
+SMTP_PASSWORD=your_smtp_password
+SMTP_FROM_EMAIL=no-reply@example.com
 ```
+
+For production, set the same variables in the backend host's environment settings. Configure SMTP with a verified sender address; password reset links are single-use and expire after 30 minutes. Users can sign in with either their username or email address.
 
 Start the backend server:
 ```bash
