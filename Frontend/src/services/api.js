@@ -1,6 +1,6 @@
-/**
- * Audify API Service Client
- */
+const API_BASE_URL = import.meta.env.PROD
+? "https://audify-rc1v.onrender.com"
+: "";
 export async function apiFetch(endpoint, options = {}) {
   const token = localStorage.getItem('pw_token') || '';
   const headers = { ...(options.headers || {}) };
@@ -12,7 +12,7 @@ export async function apiFetch(endpoint, options = {}) {
     headers['Content-Type'] = 'application/json';
   }
 
-  const response = await fetch(endpoint, {
+  const response = await fetch(`${API_BASE_URL}${endpoint}`, {
     ...options,
     headers,
     credentials: 'include',
